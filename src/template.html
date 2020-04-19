@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weatherGIFS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-teal-700">
+  <section class="max-w-xs mx-auto bg-teal-900 rounded p-8 mt-40">
+    <h1 class="text-center text-2xl text-teal-100 mt-8">Weather GIFS</h1>
+    <h2 class="text-center text-base text-teal-100">please enter a city and countrycode</h2>
+    <div id="weather-data" class="text-center flex flex-col">
+      <input type="text" class="my-2 text-center" name="city" id="citydata" placeholder="city">
+      <input type="text" class="my-2 text-center" name="countrycode" id="countrydata" placeholder="countrycode">
+      <button class="mt-1 bg-red-400 p-1 rounded text-white w-2/3 mx-auto" type="submit" id="fetchbutton">Get
+        weather GIFS</button>
+    </div>
+  </section>
+
+  <section id="weatherSection" class="max-w-xs mx-auto mt-10 text-center">
+    <div id="spinner" class="loader mx-auto hidden"></div>
+    <div id="weatherBlock">
+      <h1 id="city-country-current" class="text-3xl"></h1>
+      <p id="weather-description" class="text-2xl mt-4 block bg-teal-900 rounded text-teal-100"></p>
+      <p id="temperature" class="text-2xl mt-4 block bg-teal-900 rounded text-teal-100"></p>
+    </div>
+
+  </section>
+
+  <section id="gifs" class="mt-20 mx-10 text-center hidden">
+    <h1 class="text-3xl">Here some Gifs based on your current weather</h1>
+    <div id="images-container" class="flex flex-row flex-wrap justify-center">
+
+    </div>
+  </section>
+</body>
+
+</html>
